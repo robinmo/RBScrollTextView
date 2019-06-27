@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7PW-Do-mGB">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="OiM-aR-asS">
+            <objects>
+                <navigationController id="7PW-Do-mGB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oSM-1k-pe6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FlC-sE-859"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7rg-Ii-Pf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-955" y="21"/>
+        </scene>
+        <!--可视化DEMO-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQs-Gy-WI2" customClass="RBScrollTextView">
+                                <rect key="frame" x="87" y="222" width="240" height="60"/>
+                                <color key="backgroundColor" name="linkColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="42p-16-uKR"/>
+                                    <constraint firstAttribute="width" constant="240" id="ohL-vh-49L"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text">
+                                        <mutableString key="value">这是一段水平滚动的文字。Here is a piece of scrolling text这是一段水平滚动的文字。Here is a piece of scrolling text这是一段水平滚动的文字。Here is a piece of scrolling text这是一段水平滚动的文字。Here is a piece of scrolling text这是一段水平滚动的文字。Here is a piece of scrolling text这是一段水平滚动的文字。Here is a piece of scrolling text这是一段水平滚动的文字。Here is a piece of scrolling text</mutableString>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mK8-0Z-co2" customClass="RBScrollTextView">
+                                <rect key="frame" x="57" y="332" width="300" height="60"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.2627450980392157" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="TJg-Vz-YZN"/>
+                                    <constraint firstAttribute="height" constant="60" id="qjI-Z0-JwA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text">
+                                        <mutableString key="value">这是一段水平滚动的文字。Here is a piece of scrolling text这是一段水平滚动的文字。Here is a piece of scrolling text这是一段水平滚动的文字。Here is a piece of scrolling text这是一段水平滚动的文字。Here is a piece of scrolling text这是一段水平滚动的文字。Here is a piece of scrolling text这是一段水平滚动的文字。Here is a piece of scrolling text这是一段水平滚动的文字。Here is a piece of scrolling text</mutableString>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollPtps">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlw-ZL-wep">
+                                <rect key="frame" x="124" y="492" width="166" height="47"/>
+                                <color key="backgroundColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Jgx-yv-XZT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                <state key="normal" title="代码范例DEMO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="e02-V7-BuX" kind="show" id="juu-J9-Lor"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wlw-ZL-wep" firstAttribute="top" secondItem="mK8-0Z-co2" secondAttribute="bottom" constant="100" id="4mh-ZX-BIr"/>
+                            <constraint firstItem="mK8-0Z-co2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9eM-cw-BBD"/>
+                            <constraint firstItem="fQs-Gy-WI2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SOC-dO-Ouu"/>
+                            <constraint firstItem="wlw-ZL-wep" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cbq-x0-Zzz"/>
+                            <constraint firstItem="fQs-Gy-WI2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ebk-gO-g9L"/>
+                            <constraint firstItem="mK8-0Z-co2" firstAttribute="top" secondItem="fQs-Gy-WI2" secondAttribute="bottom" constant="50" id="mih-ye-3Am"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="可视化DEMO" prompt="RBScrollTextView" id="NDY-cq-YD6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="20.758928571428569"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="8V6-uA-yQ8">
+            <objects>
+                <viewController id="e02-V7-BuX" customClass="RBCodeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TVd-1l-M5v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KXF-27-DVg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CV2-jK-em4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="21"/>
+        </scene>
+    </scenes>
+</document>
